@@ -13,7 +13,7 @@ public class FileReader {
         StringBuilder data = new StringBuilder();
         Map<String,String> map = new HashMap<>();
         int ch;
-        try (FileInputStream inputStream = new FileInputStream("C:\\Users\\Prime_Z370\\IdeaProjects\\stage0-module3-task4\\stage1-module6-io-task1\\src\\main\\resources\\Profile.txt")) {
+        try (FileInputStream inputStream = new FileInputStream(file)) {
             while ((ch = inputStream.read()) != -1) {
                 data.append((char) ch);
             }
